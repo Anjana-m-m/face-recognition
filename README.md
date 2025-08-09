@@ -1,9 +1,38 @@
-# IMPORTANT: Bug Fixes
+# 😂 Face Emotion Detector — Fun Mode 🎭
 
-## `navigator.getUserMedia`
+A fun web-based project that uses **[face-api.js](https://github.com/justadudewhohacks/face-api.js)** to detect facial expressions in real-time and respond with **funny messages and matching images**.
 
-`navigator.getUserMedia` is now deprecated and is replaced by `navigator.mediaDevices.getUserMedia`. To fix this bug replace all versions of `navigator.getUserMedia` with `navigator.mediaDevices.getUserMedia`
+This project works entirely in the browser — no server needed!
 
-## Low-end Devices Bug
+---
 
-The video eventListener for `play` fires up too early on low-end machines, before the video is fully loaded, which causes errors to pop up from the Face API and terminates the script (tested on Debian [Firefox] and Windows [Chrome, Firefox]). Replaced by `playing` event, which fires up when the media has enough data to start playing.
+## 🚀 Features
+
+- 🎥 **Live Face Detection** — Detects your face and expressions using your webcam.
+- 😄 **Emotion Recognition** — Identifies emotions like `happy`, `sad`, `angry`, `surprised`, and `neutral`.
+- 😂 **Humorous Responses** — Displays a witty message for each detected mood.
+- 🖼 **Matching Images** — Shows a mood-specific image alongside the message.
+- 🎨 **Custom Fonts & Styling** — Supports custom fonts like Google Fonts.
+- 📱 **Responsive Layout** — Works well on laptops and desktops.
+
+---
+
+## 📸 How It Works
+
+1. **Webcam Access** — The browser captures video (video is hidden from view).
+2. **Face Detection** — `face-api.js` detects faces, landmarks, and expressions.
+3. **Emotion Mapping** — The script finds your strongest expression.
+4. **Dynamic Display** — A matching image + funny text is shown on the page.
+
+---
+
+## 🛠 Tech Stack
+
+- **HTML5** — Page structure
+- **CSS3** — Styling and custom fonts
+- **JavaScript (ES6)** — Application logic
+- **[face-api.js](https://github.com/justadudewhohacks/face-api.js)** — Facial recognition & emotion detection
+- **Google Fonts** — Optional typography
+
+---
+
