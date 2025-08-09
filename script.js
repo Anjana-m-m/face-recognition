@@ -8,12 +8,16 @@ Promise.all([
 ]).then(startVideo)
 
 function startVideo() {
-  navigator.mediaDevices.getUserMedia(
-    { video: {} },
-    stream => video.srcObject = stream,
-    err => console.error(err)
-  )
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(stream => {
+      const video = document.getElementById('video');
+      video.srcObject = stream;
+    })
+    .catch(err => {
+      console.error("Error accessing webcam: ", err);
+    });
 }
+
 
 video.addEventListener('play', () => {
   const canvas = faceapi.createCanvasFromMedia(video)
