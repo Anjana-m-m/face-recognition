@@ -47,59 +47,38 @@ Now your screen can roast your face *and* give you virtual butterflies at the sa
 ### Implementation
 For Software:
 # Installation
-[commands]
+https://github.com/Anjana-m-m/face-recognition.git 
 
 # Run
-[commands]
+ Open index.html in your browser
+  or use Live Server in VS Code for smooth loading
+
 
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+# Screenshots
+![Screenshot](imags/ss1.png)
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+*When you are in neutral mood*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot](imags/ss2.png)
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+*When you are in happy mood*
 
-For Hardware:
+![Screenshot](imags/ss3.png)
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+*cover page.*
 
 ### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+*try it yourself*
+https://face-recognition-ruddy.vercel.app/)
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Sreeparvathi M:coding and creative image selection.
+- Anjana M M: coding and text selection.
+  
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
@@ -108,7 +87,6 @@ Made with ❤️ at TinkerHub Useless Projects
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/moodwing.git
+(https://github.com/Anjana-m-m/face-recognition.git)
 
-# Navigate to the project folder
-cd moodwing
+
