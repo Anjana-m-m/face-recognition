@@ -2,6 +2,48 @@
 
 const video = document.getElementById('video');
 
+const sadImage=["imags/sad1.jpg","imags/sad2.jpg","imags/sad3.jpeg"];
+let imgElement = document.getElementById("displayImage");
+// const happyText = [
+//   "Someone’s clearly been paid today!",
+//   "That’s the smile of a person who’s hiding from responsibilities.",
+//   "Looking way too happy for someone at a make-a-thon.",
+//   "Calm down, it’s not even free pizza yet.",
+//   "That smile says: ‘I actually tested my code.’"
+// ];
+
+// const angryText = [
+//   "Whoa, did GitHub delete your repo?",
+//   "Looks like someone’s merge conflict just got personal.",
+//   "Are you mad at the code or at life?",
+//   "That’s the face of someone who just found 100+ bugs.",
+//   "Deep breaths… the compiler can smell fear."
+// ];
+
+// const sadText = [
+//   "Did your code run once… and never again?",
+//   "Someone just lost a semicolon.",
+//   "Looks like you debugged for 3 hours and it was a typo.",
+//   "Who hurt you… was it Java?",
+//   "That’s the expression of someone reading their own old code."
+// ];
+
+// const surprisedText = [
+//   "Wow, it actually compiled on the first try!",
+//   "Did the code… just work?",
+//   "That’s the look of a developer who found a feature they didn’t write.",
+//   "When you realize you pushed to main by accident.",
+//   "Shocked… but also kind of impressed."
+// ];
+
+// const neutralText = [
+//   "The face of someone whose code neither works nor fails — it just exists.",
+//   "Emotion not found. Please check the API.",
+//   "Probably just waiting for npm install to finish.",
+//   "Internally screaming.",
+//   "When you’ve accepted your fate."
+// ];
+let currentIndex = 0;
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
   faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -62,18 +104,32 @@ video.addEventListener('play', () => {
       let message = "";
       switch (maxEmotion) {
         case "happy":
-          message = "You look happier than a potato in a french fry factory! 🥔🍟";
+          message =" way too happy for someone at a make-a-thon.";
+          imgElement.src ="imags/happy1.jpg"
           break;
         case "sad":
-          message = "Why so glum, chum? You look like a potato left out in the rain. 🌧️";
+          message = "Looks like you debugged for 3 hours and it was a typo.";
+          imgElement.src = "imags/sad1.jpg"
           break;
         case "angry":
-          message = "Whoa! Someone stole your fries? 🍟😡";
+          message = "Are you mad at the code or at life?";
+          imgElement.src = "imags/angry1.jpg"
+          break;
+        case "surprised":
+          message = "That’s the look of a developer who found a feature they didn’t write.";
+          imgElement.src = "imags/surprise1.jpg"
+          break;
+        case "neutral":
+          message = "Probably just waiting for npm install to finish.";
+          imgElement.src = "imags/neutral1.jpg"
           break;
         default:
           message = `Hmm... you look ${maxEmotion} right now.`;
-      }
+          imgElement.src = "imags/sad3.jpeg"
+      } 
+      
       document.getElementById("funny-message").innerText = message;
+  
     }
   }, 100);
 });
