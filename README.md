@@ -1,4 +1,4 @@
-# 😂 Face Emotion Detector — Fun Mode 🎭
+# 😂 GiggleCam — Web Cam + Humour 🎭
 
 A fun web-based project that uses **[face-api.js](https://github.com/justadudewhohacks/face-api.js)** to detect facial expressions in real-time and respond with **funny messages and matching images**.
 
