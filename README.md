@@ -14,7 +14,7 @@ This project works entirely in the browser — no server needed!
 - 🖼 **Matching Images** — Shows a mood-specific image alongside the message.
 - 🎨 **Custom Fonts & Styling** — Supports custom fonts like Google Fonts.
 - 📱 **Responsive Layout** — Works well on laptops and desktops.
-
+- 🦋 **Interactive Background Animation** — Click anywhere on the page to spawn floating butterflies that fade away.
 ---
 
 ## 📸 How It Works
